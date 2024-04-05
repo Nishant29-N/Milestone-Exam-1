@@ -19,6 +19,7 @@ body{
     background-color: #ffffff;
     background-size: cover;
     display: flex;
+    z-index: 999;
     flex-wrap: wrap;
     top: 0;
     left: 0;
@@ -42,10 +43,6 @@ body{
 
 
 
-.navbar-container > img > span{
-    margin: 0;
-    font-weight: bold;
-}
 .navbar-container > ul{
     display: flex;
     flex-direction: row;
@@ -66,6 +63,7 @@ body{
 
 .navbar-container button{
     padding: 10px 20px;
+
     background: transparent;
     border: 2px solid #121212;
     margin-right: 20px;
@@ -78,9 +76,90 @@ body{
     border: 1px solid black;
 }
 
-.landing-page-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.main-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    column-gap: 20px;
+    align-items: center;
 }
 
+
+.left-section{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.left-section h1{
+    margin-top: 90px;
+    font-size: 50px;
+}
+
+.left-section p{
+    border-left: 2px solid #121212;
+    padding-left: 20px;
+}
+
+.left-section .learn-more-btn {
+    background: transparent;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.left-section .get-started-btn {
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #ff8409;
+    padding: 10px 30px;
+    color: #ffffff;
+    margin: 30px 20px;
+}
+
+
+/* Styles for the right section */
+.right-section {
+    position: relative;
+  }
+  
+  /* Styles for the images */
+  .right-section .img {
+    position: absolute;
+  }
+  
+  /* Positioning the images */
+  .right-section .img1 {
+    top: -100px;
+    transform: scale(1.5);
+    left: 200px;
+    -webkit-mask-image: url(./E-Guru/main-image-bg.png);
+    mask-image: url(./E-Guru/main-image.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    z-index: 2;
+  }
+  
+  .right-section .img2 {
+    bottom: 0;
+    top: -200px;
+    right: 120px;
+  }
+  
+  .right-section .img3 {
+    top: 20%;
+    left: 10%;
+  }
+  
+  .right-section .img4 {
+    top: 50%;
+    left: 40%;
+  }
+  
+  .right-section .img5 {
+    bottom: 30%;
+    right: 20%;
+  }
+  
+  .right-section .img6 {
+    bottom: 10%;
+    left: 30%;
+  }

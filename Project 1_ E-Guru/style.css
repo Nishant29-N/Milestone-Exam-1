@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+body{
+    font-family: Poppins;
+    scroll-behavior: smooth;
+    margin: auto;
+    padding: auto; 
+}
+
+.header-container{
+    margin: 0;
+    position: sticky;
+    top: 0;
+    /* border: 1px solid black; */
+    padding: 0;
+}
+
+.navbar-container{
+    background-color: #ffffff;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    top: 0;
+    left: 0;
+    right: 0; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    align-items: center;
+}
+.header-logo > img{
+    max-width: 50px;
+    max-height: 50px;
+    color: black;
+}
+
+
+
+.navbar-container > img > span{
+    margin: 0;
+    font-weight: bold;
+}
+.navbar-container > ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navbar-container ul li a{
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+}
+
+.navbar-container ul li a:hover{
+    font-weight: bolder;
+    transform: scale(1.04);
+    transition: 200ms;
+}
+
+.navbar-container button{
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid #121212;
+    margin-right: 20px;
+}
+.navbar-container button:hover{
+    cursor: pointer;
+}
+
+#home{
+    border: 1px solid black;
+}
+
+.landing-page-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+

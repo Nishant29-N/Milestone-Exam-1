@@ -9,6 +9,7 @@ body{
 
 .header-container{
     margin: 0;
+    box-shadow: 1px 1px 10px;
     position: sticky;
     top: 0;
     /* border: 1px solid black; */
@@ -76,12 +77,12 @@ body{
     transition: 200ms;
 }
 
-#home{
-    border: 1px solid black;
-}
+/* #home{
+    border: 1px solid black;    
+} */
 
 .main-container{
-    height: auto;
+    height: 100%;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -127,7 +128,6 @@ body{
 .learn-more-btn{
     border: 1px solid #121212;
 }
-
 
 
 

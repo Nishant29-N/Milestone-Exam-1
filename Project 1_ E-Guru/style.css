@@ -3,28 +3,22 @@
 body{
     font-family: Poppins;
     scroll-behavior: smooth;
-    margin: auto;
-    padding: auto; 
+    margin: 0;
 }
 
 .header-container{
-    margin: 0;
+    /* margin: 0; */
     box-shadow: 1px 1px 10px;
     position: sticky;
     top: 0;
-    /* border: 1px solid black; */
-    padding: 0;
+    z-index: 1000;
 }
 
 .navbar-container{
     background-color: #ffffff;
     background-size: cover;
     display: flex;
-    z-index: 999;
     flex-wrap: wrap;
-    top: 0;
-    left: 0;
-    right: 0; 
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
@@ -95,8 +89,9 @@ body{
 
 .left-section{
     width: 100%;
-    margin-left: 100px;
+    margin-left: 200px;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 
@@ -129,6 +124,88 @@ body{
     border: 1px solid #121212;
 }
 
+.img-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 0px;
+}
+
+.image1{
+    position: absolute;
+    z-index: 1;
+    max-height: 50%;
+    max-width: 100%;
+    /* top: -2px; */
+    
+}
+
+.image1 > img{
+    height: 28rem;
+    position: relative;
+    bottom: 4px;
+    border-radius: 0 0 50% 50% / 0 0 13% 14%;
+}
+
+.image2{
+    position: absolute;
+    z-index: 0;
+    max-height: 50%;
+    
+}
+
+.image3{
+    position: absolute;
+    z-index:2;
+    max-height: 50%;
+}
+.image3 >img{
+    position: relative;
+    bottom: 28px;
+}
+
+.image4{
+    position: relative;
+    z-index:3;
+    max-height: 50%;
+}
+.image4 >img{
+    position: absolute;
+    bottom: -170px;
+    right: 350px;
+}
+.image5{
+    position: absolute;
+    z-index:3;
+    max-height: 50%;
+}
+.image5 >img{
+    position: relative;
+    top: 280px;
+    right: 250px;
+}
+.image6{
+    position: absolute;
+    z-index:3;
+    max-height: 50%;
+}
+.image6 >img{
+    position: relative;
+    top: 280px;
+    right: -200px;
+}
+.image7{
+    position: absolute;
+    z-index:3;
+    max-height: 50%;
+}
+.image7 >img{
+    position: relative;
+    top: -150px;
+    left: -250px;
+}
 
 
 

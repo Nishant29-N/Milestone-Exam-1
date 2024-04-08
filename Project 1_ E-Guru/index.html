@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Guru</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/bc94aa2890.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Navbar -->
     <header class="header-container">
         <nav class="navbar-container" id="nav-bar">
-
+            <img class="menu-bar" src="./E-Guru/menu-icon.png" alt="menu-bar">
             <div class="header-logo">
-                <img src="./E-Guru/logo.png" alt="logo-img">
+                <img class="logo-main" src="./E-Guru/logo.png" alt="logo-img">
                     <h2>E GURU</h2>
             </div>
             <ul>
@@ -29,7 +31,9 @@
                     <a href="#">How It Works</a>
                 </li>
             </ul>
-
+            <i class="fas fa-bars"></i>
+            <img class="user-profile" src="./E-Guru/user-profile.png" alt="user">
+            
             <button>Sign Up</button>
         </nav>
     </header>
@@ -40,10 +44,12 @@
         <div class="main-container">
 
             <div class="left-section">
-                <h1>STUDY FROM <br> HOME WITH EXPERT</h1>
-                <p>A learning system based on formalised <br> teaching with the help of resources</p>
-                <button class="home-page-btn get-started-btn">Get Started</button>
-                <button class="home-page-btn learn-more-btn">Learn More</button>
+                <h1>STUDY FROM HOME WITH EXPERT</h1>
+                <p>A learning system based on formalised  teaching with the help of resources</p>
+                <div class="home-page-btn">
+                    <button class=" get-started-btn">Get Started</button>
+                    <button class="learn-more-btn">Learn More</button>
+                </div>
             </div>
 
             <div class="img-section">
@@ -70,6 +76,29 @@
                 </div>
             </div>
     </section>
-
+    <!-- footer section -->
+        <div class="main-footer">
+            <div class="footer-info">
+                <h1>WHY ARE WE<br>THE BEST</h1>
+                <p>A learning system based on<br>formalised teaching with the help of</p>
+            </div>
+            <div class="card-container">
+                <div class="cards card1">
+                    <img src="./E-Guru/vector1.png" alt="vector-1">
+                    <h3>Expert Teachers</h3>
+                    <p>A learning based system<br>formalised teaching</p>
+                </div>
+                <div class="cards card2">
+                    <img src="./E-Guru/vector2.png" alt="vector-1">
+                    <h3>Online Courses</h3>
+                    <p>A learning based system<br>formalised teaching</p>
+                </div>
+                <div class="cards card3">
+                    <img src="./E-Guru/vector3.png" alt="vector-1">
+                    <h3>24/7 Support</h3>
+                    <p>A learning based system<br>formalised teaching</p>
+                </div>
+            </div>
+        </div>
 </body>
 </html>

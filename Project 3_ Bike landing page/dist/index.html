@@ -7,11 +7,34 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/bc94aa2890.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+        width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        }
+    </style>
 </head>
-<body class="m-0 p-0 font">
+<body class="m-0 p-0">
 
     <!-- Nav Bar Starts -->
-    <nav class="flex sticky top-0 w-full justify-between bg-white items-center shadow-lg z-50">
+    <nav class="nav-bar flex sticky top-0 w-full justify-between bg-white items-center shadow-lg z-50">
         <div class="nav-logo">
             <img class="mx-8 my-4" src="./assets/logo.png" alt="logo">
         </div>
@@ -19,8 +42,8 @@
         <div class="nav-links">
             <ul class="flex items-center justify-between">
                 <li class="mx-4 hover:font-bold duration-200">
-                    <select class="m-0 bg-transparent">
-                        <option value="bike">Product</option>
+                    <select class=" bg-transparent">
+                        <option value="product">Product</option>
                         <option value="bike">Bike</option>
                         <option value="ev-bike">EV Bike</option>
                         <option value="sybrid-bike">Hybrid Bike</option>
@@ -39,7 +62,7 @@
     
     
     <!-- Hero Section Starts -->
-    <header class="w-full bg-slate-200 h-full flex justify-between">
+    <header class="hero-section w-full bg-slate-200 h-full flex justify-between">
         <div class="ml-14 my-11 content-section">
             <h1 class="heading my-11 text-[50px] ">
                 <span class="">LET'S RIDE</span> <br> 
@@ -52,8 +75,8 @@
                 <span>in mind.</span>
             </p>
             <div class="buy-now flex mt-5 justify-left items-center">
-                <i class=" mt-5 p-4 bg-slate-800 text-white font-semibold fa-solid fa-arrow-right"></i> 
-                <span class="animate-pulse duration-100 font-bold mx-3 mt-5 text-2xl mr-14">Buy Now</span>
+                <i class="cursor-pointer mt-5 p-4 bg-slate-800 text-white font-semibold fa-solid fa-arrow-right"></i> 
+                <span class="cursor-pointer animate-pulse duration-100 font-bold mx-3 mt-5 text-2xl mr-14">Buy Now</span>
                 
                 <p class="mt-5">
                     <span>Watch our </span> <br>
@@ -69,12 +92,102 @@
                 <img class="relative left-[130px] top-[-40px]" src="./assets/01.png" alt="" class="ml-10">
             </div>
             <div class="arrow-header flex items-center ">
-                <i class="relative top-[-120px] border-gray-700 text-gray-700 border-2 rounded-l-full p-2 ml-[80px] text-3xl left-[240px] fa-solid fa-angles-left"></i>
-                <i class="relative top-[-120px] border-gray-700 text-gray-700 border-2 rounded-r-full p-2 text-3xl left-[240px] ml-[1px] fa-solid fa-angles-right"></i>
+                <i class="cursor-pointer relative top-[-120px] border-gray-700 text-gray-700 border-2 rounded-l-full p-2 ml-[80px] text-3xl left-[240px] fa-solid fa-angles-left"></i>
+                <i class="cursor-pointer relative top-[-120px] border-gray-700 text-gray-700 border-2 rounded-r-full p-2 text-3xl left-[240px] ml-[1px] fa-solid fa-angles-right"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section Ends -->
+
+
+    <!-- Card Section Starts --> 
+    <div class="card-container w-[100%] h-[300px] flex justify-between items-center bg-slate-200">
+        <div class="card-1 w-[30%] gap-1 mx-6 bg-white py-8 shadow-2xl rounded-xl flex justify-center items-center flex-col">
+            <h1 class="text-4xl font-bold">
+                105
+                <span class="text-xl font-bold">lbs</span>
+            </h1>
+            <p class="font-medium">Net Weight</p>
+        </div>
+        <div class="card-1 w-[30%] gap-1 mx-6 bg-white py-8 shadow-2xl rounded-xl flex justify-center items-center flex-col">
+            <h1 class="text-4xl font-bold">
+                26
+                <span class="text-xl font-bold">m/ph</span>
+            </h1>
+            <p class="font-medium">Top Speed</p>
+        </div>
+        <div class="card-1 w-[30%] gap-1 mx-6 bg-white py-8 shadow-2xl rounded-xl flex justify-center items-center flex-col">
+            <h1 class="text-4xl font-bold">
+                38
+                <span class="text-xl font-bold">miles</span>
+            </h1>
+            <p class="font-medium">Max Range</p>
+        </div>
+        <div class="card-1 w-[30%] gap-1 mx-6 bg-white py-8 shadow-2xl rounded-xl flex justify-center items-center flex-col">
+            <h1 class="text-4xl font-bold">
+                89
+                <span class="text-xl font-bold">nm</span>
+            </h1>
+            <p class="font-medium">Max Torques</p>
+        </div>
+        <div class="card-1 w-[30%] gap-1 mx-6 bg-white py-8 shadow-2xl rounded-xl flex justify-center items-center flex-col">
+            <h1 class="text-4xl font-bold">
+                22%
+                <span class="text-xl font-bold">slopes</span>
+            </h1>
+            <p class="font-medium">Hill Climbing</p>
+        </div>
+        <div class="card-1 w-[30%] gap-1 mx-6 bg-white py-8 shadow-2xl rounded-xl  flex justify-center items-center flex-col">
+            <h1 class="text-4xl font-bold">
+                2x
+                <span class="text-xl font-bold">lbs</span>
+            </h1>
+            <p class="font-medium">Hydraulic Disc Brakes</p>
+        </div>
+    </div> 
+    <!-- Card Section Ends --> 
+
+    
+    <!-- Product Information Starts --> 
+    <div class="heading-pr-info bg-slate-200 py-3">
+        <h1 class="text-4xl font-bold text-center ">Product Information</h1>
+        <p class="text-2xl font-semibold text-center">Our Scooter has Following Unique Design and Technology Feaures: </p>
+    </div>
+    <div class="pr-info-container w-full grid grid-cols-2 bg-slate-200">
+
+        <div class="pr-info-sub-container">
+            <div class="pr-info-img">
+                <img class="mix-blend-multiply w-[80%]" src="./assets/product information image.png" alt="">
             </div>
         </div>
 
-    </header>
-
+        <div class="features ml-24 flex flex-col justify-center items-start">
+            <div class="flex items-center my-3 ">
+                <img src="./assets/Icon.png" alt="icon">
+                <span class="ml-4">Lightweight aircraft grade aluminium frame.</span>
+            </div>
+            <div class="flex items-center my-3 ">
+                <img src="./assets/Icon.png" alt="icon">
+                <span class="ml-4">Car grade lithium battery.</span>
+            </div>
+            <div class="flex items-center my-3 ">
+                <img src="./assets/Icon.png" alt="icon">
+                <span class="ml-4">Self-balanced.</span>
+            </div>
+            <div class="flex items-center my-3 ">
+                <img src="./assets/Icon.png" alt="icon">
+                <span class="ml-4">Plug n play.</span>
+            </div>
+            <div class="flex items-center my-3 ">
+                <img src="./assets/Icon.png" alt="icon">
+                <span class="ml-4">Quick Release Adapter.</span>
+            </div>
+            <div class="flex items-center my-3 ">
+                <img src="./assets/Icon.png" alt="icon">
+                <span class="ml-4">RFID key card.</span>
+            </div>
+        </div>
+    </div>
+    <!-- Product Information Ends --> 
 </body>
 </html>

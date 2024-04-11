@@ -6,9 +6,75 @@
     <title>Bike Landing Page</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/bc94aa2890.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1 class="text-5xl font-bold underline">Hellow</h1>
-    <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a ullam laborum numquam autem architecto delectus nulla modi molestias minima fugiat alias soluta neque, deserunt tempora obcaecati facilis consequuntur sapiente odio ex atque nam suscipit! Quae, maxime praesentium! Explicabo eos sunt pariatur hic dolorem. Debitis velit laboriosam consectetur laborum quos!</p>
+<body class="m-0 p-0 font">
+
+    <!-- Nav Bar Starts -->
+    <nav class="flex sticky top-0 w-full justify-between bg-white items-center shadow-lg z-50">
+        <div class="nav-logo">
+            <img class="mx-8 my-4" src="./assets/logo.png" alt="logo">
+        </div>
+        
+        <div class="nav-links">
+            <ul class="flex items-center justify-between">
+                <li class="mx-4 hover:font-bold duration-200">
+                    <select class="m-0 bg-transparent">
+                        <option value="bike">Product</option>
+                        <option value="bike">Bike</option>
+                        <option value="ev-bike">EV Bike</option>
+                        <option value="sybrid-bike">Hybrid Bike</option>
+                    </select>
+                </li>
+                <li class="mx-4 hover:font-bold duration-200"><a href="#">Gallery</a></li>
+                <li class="mx-4 hover:font-bold duration-200"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="mr-8 nav-btn">
+            <button class="mx-8 shadow-md py-3 px-7 rounded-md hover: cursor-pointer">Login</button>
+            <button class="py-3 text-white rounded-md bg-slate-800 px-7 hover:bg-slate-900 hover:shadow-md cursor-pointer">Sign Up</button>
+        </div>
+    </nav>
+    <!-- Nav Bar Ends -->
+    
+    
+    <!-- Hero Section Starts -->
+    <header class="w-full bg-slate-200 h-full flex justify-between">
+        <div class="ml-14 my-11 content-section">
+            <h1 class="heading my-11 text-[50px] ">
+                <span class="">LET'S RIDE</span> <br> 
+                <span class="font-bold">THE FUTURE.</span>
+            </h1>
+            <div class="line border-b-4 border-black rounded-lg"></div>
+            
+            <p class="mt-14 font-semibold text-2xl">
+                <span>Simple and sleek design with users</span> <br>
+                <span>in mind.</span>
+            </p>
+            <div class="buy-now flex mt-5 justify-left items-center">
+                <i class=" mt-5 p-4 bg-slate-800 text-white font-semibold fa-solid fa-arrow-right"></i> 
+                <span class="animate-pulse duration-100 font-bold mx-3 mt-5 text-2xl mr-14">Buy Now</span>
+                
+                <p class="mt-5">
+                    <span>Watch our </span> <br>
+                    <span>video how </span><br>
+                    <span>it works.</span>
+                </p>
+                <img class="animate-pulse duration-[300ms] ml-5 mt-5" src="./assets/header play button.png" alt="">
+            </div>
+        </div>
+        <div class="image-section flex flex-col items-center">
+            <img class="w-[75%] mt-3" src="./assets/header image.png" alt="header-img">
+            <div class="01-img">
+                <img class="relative left-[130px] top-[-40px]" src="./assets/01.png" alt="" class="ml-10">
+            </div>
+            <div class="arrow-header flex items-center ">
+                <i class="relative top-[-120px] border-gray-700 text-gray-700 border-2 rounded-l-full p-2 ml-[80px] text-3xl left-[240px] fa-solid fa-angles-left"></i>
+                <i class="relative top-[-120px] border-gray-700 text-gray-700 border-2 rounded-r-full p-2 text-3xl left-[240px] ml-[1px] fa-solid fa-angles-right"></i>
+            </div>
+        </div>
+
+    </header>
+
 </body>
 </html>

@@ -60,11 +60,12 @@ html,
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
-
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 body {
   margin: 0;
   /* 1 */
   line-height: inherit;
+  font-family: Montserrat;
   /* 2 */
 }
 

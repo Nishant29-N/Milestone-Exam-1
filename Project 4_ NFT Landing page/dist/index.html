@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Nova+Round&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bc94aa2890.js" crossorigin="anonymous"></script>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+        width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        }
+        /* gradient mixture */
+    .custom-gradient {
+      background: #d164fa;
+      background: linear-gradient(
+        135deg,
+        #d164fa 6%,
+        #5d60d6 14%,
+        #501aa1 24%,
+        #1d1336 33%
+      );
+    }
+
+    /* div with rounded bottom */
+    .round-bottom {
+      clip-path: ellipse(100% 80% at 50% 20%);
+    }
+
+    /* button border gradient */
+    .br-gradient {
+      border-width: 2px;
+      border-style: solid;
+      border-image: linear-gradient(to right, #3c9fe6, #7f2bc0) 1;
+    }
+    </style>
+</head>
+<body class="font-Poppins relative bg-[#160e2a]">
+    <!-- Header Starts -->
+    <header class="w-full custom-gradient round-bottom backdrop-blur-md">
+
+        <!-- Nav Bar Starts -->
+        <nav class="nav-bar-container backdrop-blur-md  md:bg-white/5 bg-none absolute w-full top-0">
+            <div class="main-nav flex justify-between border-b-2 items-center py-3">
+                <div class="nav-logo ml-9">
+                    <img src="../assets/logo.png" alt="">
+                </div>
+                <div class="nav-links">
+                    <ul class="text-white flex ">
+                        <li class="mx-8 hover:font-bold duration-200"><a href="#">MARKETPLACE</a></li>
+                        <li class="mx-8 hover:font-bold duration-200"><a href="#">ABOUT</a></li>
+                        <li class="mx-8 hover:font-bold duration-200"><a href="#">RESOURCES</a></li>
+                        <li class="mx-8 hover:font-bold duration-200"><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="nav-btns flex text-white  mr-9">
+                    <button class="custom-gradient ml-6 px-8 py-2 rounded-md border-2 border-x-blue-500 border-y-pink-500">Login</button>
+                    <button class="custom-gradient ml-6 px-7 py-2 rounded-md border-2 border-x-blue-500 border-y-pink-500">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Bar Ends -->
+
+
+        <!-- Header main section stars-->
+        <div class="head-main custom-gradient rounded-bottom grid grid-cols-2 gap-5 items-center">
+            <div class="head-info-section text-left ml-11 flex flex-col">
+                <div>
+                    <h1 class="text-7xl text-white opacity-70 " style="font-family: 'Nova Round', system-ui;">
+                        Keep Calm & <br>
+                        Collect Your NFTs.
+                    </h1>
+                    <p class="text-white py-4  opacity-80 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, ipsam porro sed, consectetur cumque delectus nulla modi, esse repudiandae nesciunt numquam! Dolorum molestiae magnam, animi consequuntur fugit impedit vel, labore vero pariatur, numquam nihil a illo? A qui porro modi repudiandae neque officiis voluptatum maxime ad quasi, iusto eligendi accusantium!</p>
+                </div>
+                <div class="head-btn flex mt-7">
+                    <button class="my-5">
+                        <i class="fa-solid fa-play shadow-xl text-2xl fa-xl rounded-md flex bg-clip-text text-transparent bg-gradient-to-b from-indigo-500 to-purple-500"></i>
+                    </button>
+                    <div class=" opacity-80 ">
+                        <span class="font-bold text-white mt-4 ml-5">Let's Get Started</span>
+                        <p class="text-white ml-5 text-[12px]">Watch this quick demo video to see <br> how to get started.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="head-img-section flex items-center justify-center">
+                <img class="w-[70%]" src="../assets/image.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends -->
+
+
+    <!-- Top Creators Start -->
+    <main>
+        <div class="w-full top-creators-container bg-[#160e2a] mx-auto px-5 md:px-0 md:py-[5%] py-[15%] flex flex-col
+            justify-center items-center">
+            <div 
+                class="circle bg-clip-content absolute bottom-[44.5%] bg-gradient-to-b from-indigo-500 to-purple-500 w-20 h-20 rounded-full md:left-[39%] left-[9%] z-9">
+            </div>
+            <div class="creators z-10">
+                <h1 class=" text-center text-white font-bold capitalize text-4xl z-10">Top Creators</h1>
+            </div>
+
+            <div class="creator-main-bg">
+                <img src="../assets/map.png" alt="">
+            </div>
+
+            <div class="creators-img">
+                <img class="creator-1  absolute bottom-[240px] left-[695px]" src="../assets/person.png" alt="">
+                <img class="creator-2  absolute bottom-[275px] left-[415px]" src="../assets/person.png" alt="">
+                <img class="creator-3  absolute bottom-[475px] left-[385px]" src="../assets/person.png" alt="">
+                <img class="creator-4  absolute bottom-[575px] left-[775px]" src="../assets/person.png" alt="">
+                <img class="creator-5  absolute bottom-[490px] left-[645px]" src="../assets/person.png" alt="">
+                <img class="creator-6  absolute bottom-[345px] left-[765px]" src="../assets/person.png" alt="">
+                <img class="creator-7  absolute bottom-[520px] left-[980px]" src="../assets/person.png" alt="">
+            </div>
+            <button class="custom-gradient animate-bounce duration-700 to-purple-500 text-white font-semibold ml-6 px-7 py-2 rounded-md border-2 border-x-blue-500 border-y-pink-500">View All Collectors</button>
+        </div>
+    </main>
+    <!-- Top Creators Ends -->
+</body>
+</html>

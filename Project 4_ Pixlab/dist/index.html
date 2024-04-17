@@ -6,8 +6,46 @@
     <title>PixLab</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/bc94aa2890.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <h1 class="text-center">Hello</h1>
+<body class="m-0 p-0 scroll-smooth">
+    <nav class="navbar-container py-3 top-0 w-full border-b-2 flex-row md:px-0 md:flex justify-around shadow-sm items-center sticky">
+        <div class="navbar-logo">
+            <img src="../Assets/Logo.png" alt="Logo">
+        </div>
+        <div class="nav-links  hidden md:flex">
+            <ul class="md:flex justify-around items-center hidden">
+                <li class="mx-5 hover:font-bold duration-[0.2s] ease-in-out">
+                    <a href="#">Home</a>
+                </li>
+                <li class="mx-5 hover:font-bold duration-[0.2s] ease-in-out">
+                    <a href="#">About Us</a>
+                </li>
+                <li class="mx-5 hover:font-bold duration-[0.2s] ease-in-out">
+                    <a href="#">Our Apps</a>
+                </li>
+                <li class="mx-5 hover:font-bold duration-[0.2s] ease-in-out">
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-btns md:flex">
+            <button class="w-[100px] mr-5 h-[50px] border rounded-xl hover:shadow-md hover:font-bold duration-[0.2s] ease-in-out font-semibold">Login</button>
+            <button class="w-[100px]  h-[50px] text-white bg-orange-600 font-semibold rounded-xl hover:shadow-lg hover:font-bold duration-[0.2s] ease-in-out">Sign Up</button>
+        </div>
+        <!-- <div class="md:m-0">
+            <i class="fa-solid fa-bars block md:none"></i>
+        </div> -->
+
+    </nav>
+
+    <header class="flex justify-center items-center w-full">
+        <div class="left-header flex flex-col w-[50%]">
+            <h1 class="text-4xl font-bold text-left">We boost <br> growth for your <br>startup business.</h1>
+        </div>
+        <div class="right-header flex flex-col w-[50%]">
+            <h1 class=" text-left">We boost growth for your startup business.</h1>
+        </div>
+    </header>
 </body>
 </html>

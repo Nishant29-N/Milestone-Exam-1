@@ -11,10 +11,14 @@
         @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
         body{
             font-family: Montserrat;
+            /* scroll-behavior: smooth; */
+        }
+        *{
+            scroll-behavior: smooth;
         }
     </style>
 </head>
-<body class="m-0 p-0 scroll-smooth ">
+<body class="m-0 p-0 scroll-smooth">
 
     <!-- Navbar Starts -->
     <nav class="navbar-container bg-white z-[1000] py-3 top-0 w-full border-b-2 flex-row md:px-0 md:flex justify-around shadow-sm items-center sticky">
@@ -24,7 +28,7 @@
         <div class="nav-links  hidden md:flex">
             <ul class="md:flex justify-around items-center hidden">
                 <li class="mx-5 hover:font-bold duration-[0.2s] ease-in-out">
-                    <a href="#">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li class="mx-5 hover:font-bold duration-[0.2s] ease-in-out">
                     <a href="#">About Us</a>
@@ -33,7 +37,7 @@
                     <a href="#">Our Apps</a>
                 </li>
                 <li class="mx-5 hover:font-bold duration-[0.2s] ease-in-out">
-                    <a href="#">Contact Us</a>
+                    <a href="#contact">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -51,7 +55,7 @@
 
     <!-- Header Starts -->
     
-    <header class="flex justify-center items-center w-full h-[800px]">
+    <header class="flex justify-center items-center w-full h-[650px]" id="home">
         <div class="left-header flex flex-col w-[50%] ml-12">
             <h1 class="text-[60px] text-[#0c1f41] leading-[70px] font-bold text-left ">We boost <br> growth for your <br>startup business.</h1>
             <p class="my-7  text-[20px] text-[#0c1f41] font-semibold">Our goal is top at the heart of creativity services industry <br> as a digital creator. It has a after comment.</p>
@@ -63,8 +67,8 @@
         </div>
         <div class="right-headerflex flex-col w-[50%] items-center justify-center ml-6">
             <div class="header-img">
-                <img class="shadow-2xl rounded-full z-10 w-[60%]" src="../Assets/joyful-guy-texting-message-smartphone2 1.png" alt="">
-                <img class="absolute top-[30%] right-[13%] z-0 w-[40%]" src="../Assets/Group 10.png" alt="">
+                <img class="absolute top-[40%] left-[55%] z-0 w-[40%]" src="../Assets/Group 10.png" alt="">
+                <img class="shadow-2xl left-[20%] relative rounded-full z-10 w-[60%]" src="../Assets/joyful-guy-texting-message-smartphone2 1.png" alt="">
             </div>
         </div>
     </header>
@@ -98,7 +102,200 @@
             </div>
         </div>
     </section>
-
     <!-- Services Ends -->
+
+    <!-- Explore Starts -->
+
+    <section class="explore grid grid-cols-2 mx-24 items-center justify-center my-9 gap-20">
+        <div class="left-explore">
+            <h1 class="text-2xl my-6 font-semibold">Many Blocks and <br> Components</h1>
+            <p class="text-xl mt-5 mb-11">Startup Framework contains componenets and complex blocks which can be easily integerated in almost any design</p>
+            <button class="border hover:text-white hover:bg-orange-600 duration-300 py-4 px-8 font-semibold border-black rounded-l-full rounded-r-full my-14">Explore</button>
+        </div>
+        <div class="right-explore">
+            <img class="shadow-2xl" src="../Assets/Video Player.png" alt="">
+        </div>
+    </section>
+
+    <!-- Explore Ends -->
+
+
+
+    <!-- Testimonials Starts -->
+    <section class="testimonials h-[650px] justify-center">
+        <p class="text-center font-semibold text-gray-600">TESTIMONIALS</p>
+        <h1 class="text-center font-bold text-gray-950 text-[40px]">What Clients Say About Us</h1>
+        <div class="testimonial-grid flex">
+            <div class="cards-grid flex flex-col w-[100%] mx-auto h-[500px] justify-around items-center">
+                <div class="card w-[400px] h-[200px] flex justify-between items-start">
+                    <div class="image">
+                        <img src="../Assets/Mask.png" alt="" class="w-[200px] ">
+                    </div>
+                    <div class="content px-4 ml-3 flex  flex-col gap-4 font-medium">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, aut Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Sunt, enim. Lorem ipsum dolor sit amet consectetur <br>
+                        <span class="text-[14px] text-slate-500 ">RAYHAN CURRAN </span>
+                    </div>
+                </div>
+                <div class="card w-[400px] h-[200px] flex justify-between items-start">
+                    <div class="image">
+                        <img src="../Assets/Mask (1).png" alt="" class="w-[200px] ">
+                    </div>
+                    <div class="content px-4 ml-3 flex  flex-col gap-4 font-medium">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, aut Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Sunt, enim. Lorem ipsum dolor sit amet consectetur <br>
+                        <span class="text-[14px] text-slate-500 ">KAYLE FRAME</span>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-grid flex flex-col w-[100%] mx-auto h-[500px] justify-around items-center">
+                <div class="card w-[400px] h-[200px] flex justify-between items-start">
+                    <div class="image">
+                        <img src="../Assets/Mask (2).png" alt="" class="w-[200px] ">
+                    </div>
+                    <div class="content px-4 ml-3 flex  flex-col gap-4 font-medium">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, aut Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Sunt, enim. Lorem ipsum dolor sit amet consectetur <br>
+                        <span class="text-[14px] text-slate-500 ">GENE WHITFEILD</span>
+                    </div>
+                </div>
+                <div class="card w-[400px] h-[200px] flex justify-between items-start">
+                    <div class="image">
+                        <img src="../Assets/Userpic.png" alt="" class="w-[200px] ">
+                    </div>
+                    <div class="content px-4 ml-3 flex  flex-col gap-4 font-medium">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, aut Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit.
+                        Sunt, enim. Lorem ipsum dolor sit amet consectetur <br>
+                        <span class="text-[14px] text-slate-500 ">ALLEN KEME</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <!-- Testimonials Ends -->
+
+
+
+    <!-- Team Section Starts -->
+
+    <section class="team-main-container w-full">
+        <p class="text-center font-semibold text-gray-600">OUR TEAM</p>
+        <h1 class="text-center font-bold text-gray-950 text-[40px] capitalize">meet the team</h1>
+
+        <div class="cards mt-8 flex justify-around gap-5 my-11">
+            <div class="card flex flex-col justify-center items-center w-[300px] shadow-2xl rounded-xl">
+                <img class="my-4 w-[100px]" src="../Assets/Userpic (1).png" alt="">
+                <h2 class="text-xl font-semibold">Mason Campbell</h2>
+                <h5 class="text-gray-500 my-8 font-semibold">UI DESIGNER</h5>
+
+                <div class="team-socials flex justify-around items-center border-2 h-[50px] ">
+                    <button class="border-3 border-r-2 w-[100px] h-[50px] text-2xl text-gray-400">
+                        <i class="fa-brands fa-twitter"></i>
+
+                    </button>
+                    <button class="w-[100px] border-3 border-r-2  h-[50px]  text-2xl text-gray-400">
+                        <i class="fa-brands fa-facebook"></i>
+
+                    </button>
+                    <button class="w-[100px] h-[50px]  text-2xl text-gray-400">
+                        <i class="fa-brands fa-instagram"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card justify-center text-center w-[300px] shadow-2xl rounded-xl">
+                <div class="card flex flex-col justify-center items-center w-[300px] shadow-2xl rounded-xl">
+                    <img class="my-4 w-[100px]" src="../Assets/Mask (3).png" alt="">
+                    <h2 class="text-xl font-semibold">Vannesa Laird</h2>
+                    <h5 class="text-gray-500 my-8 font-semibold">UI DESIGNER</h5>
+    
+                    <div class="team-socials flex justify-around items-center border-2 h-[50px] ">
+                        <button class="border-3 border-r-2 w-[100px] h-[50px] text-2xl text-gray-400">
+                            <i class="fa-brands fa-twitter"></i>
+    
+                        </button>
+                        <button class="w-[100px] border-3 border-r-2  h-[50px]  text-2xl text-gray-400">
+                            <i class="fa-brands fa-facebook"></i>
+    
+                        </button>
+                        <button class="w-[100px] h-[50px]  text-2xl text-gray-400">
+                            <i class="fa-brands fa-instagram"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card justify-center text-center w-[300px] shadow-2xl rounded-xl">
+                <div class="card flex flex-col justify-center items-center w-[300px] shadow-2xl rounded-xl">
+                <img class="my-4 w-[100px]" src="../Assets/Userpic (2).png" alt="">
+                <h2 class="text-xl font-semibold">Irea Evans</h2>
+                <h5 class="text-gray-500 my-8 font-semibold">CLIENT MANAGER</h5>
+
+                <div class="team-socials flex justify-around items-center border-2 h-[50px] ">
+                    <button class="border-3 border-r-2 w-[100px] h-[50px] text-2xl text-gray-400">
+                        <i class="fa-brands fa-twitter"></i>
+
+                    </button>
+                    <button class="w-[100px] border-3 border-r-2  h-[50px]  text-2xl text-gray-400">
+                        <i class="fa-brands fa-facebook"></i>
+
+                    </button>
+                    <button class="w-[100px] h-[50px]  text-2xl text-gray-400">
+                        <i class="fa-brands fa-instagram"></i>
+                    </button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section Ends -->
+
+    <!-- Newsletter Starts -->
+
+    <section class="newsletter-main my-0 md:my-32">
+        <p class="text-center font-semibold text-gray-600">NEWSLETTER</p>
+        <h1 class="text-center font-bold text-gray-950 text-[40px] capitalize">Subscribe to our newsletter</h1>
+
+        <div class="news mt-8 flex justify-around gap-5 my-11">
+            <div class="left-newsletter">
+                <img src="../Assets/Frame.png" alt="">
+            </div>
+            <div class="right-newsletter mr-6">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic qui porro ex quasi laudantium pariatur! Atque, pariatur provident. Debitis, illo?</p>
+                <input class="my-7 py-5 mr-10 text-center rounded-r-full rounded-l-full border-gray-300 shadow-2xl border-2 w-[90%]" type="email" placeholder="Your E-mail here....">
+                <button class="w-[90%] py-5 my-5 bg-orange-600 rounded-xl text-white font-semibold hover:bg-white hover:text-black duration-300 ease-in border-black border shadow-lg">Subscribe to Our Newsletter</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Ends -->
+
+    <!-- Footer Starts -->
+
+    <footer class="main-footer-container mx-11 my-7" id="contact">
+        <div class="border-b-2 flex justify-around items-center py-5">
+            <img src="../Assets/Logo.png" alt="">
+            <p class="font-semibold">&copy; Copyright 2024. All Rights Reserved</p>
+    
+            <ul class="flex">
+                <li class="mx-5 hover:font-bold font-semibold duration-300">Portfolio</li>
+                <li class="mx-5 hover:font-bold font-semibold duration-300">How It Works</li>
+                <li class="mx-5 hover:font-bold font-semibold duration-300">Pricing</li>
+                <li class="mx-5 hover:font-bold font-semibold duration-300">About</li>
+                <li class="mx-5 hover:font-bold font-semibold duration-300">login</li>
+            </ul>
+            
+        </div>
+        <p class="my-10 text-gray-500 font-semibold">Startup Framework contains componenets and complex blocks which can be easily integerated in almost any design.</p>
+    </footer>
+
+    <!-- Footer Ends -->
+
+
 </body>
 </html>

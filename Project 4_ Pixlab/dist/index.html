@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/bc94aa2890.js" crossorigin="anonymous"></script>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+        body{
+            font-family: Montserrat;
+        }
+    </style>
 </head>
-<body class="m-0 p-0 scroll-smooth">
-    <nav class="navbar-container py-3 top-0 w-full border-b-2 flex-row md:px-0 md:flex justify-around shadow-sm items-center sticky">
+<body class="m-0 p-0 scroll-smooth ">
+
+    <!-- Navbar Starts -->
+    <nav class="navbar-container bg-white z-[1000] py-3 top-0 w-full border-b-2 flex-row md:px-0 md:flex justify-around shadow-sm items-center sticky">
         <div class="navbar-logo">
             <img src="../Assets/Logo.png" alt="Logo">
         </div>
@@ -36,16 +44,61 @@
         <!-- <div class="md:m-0">
             <i class="fa-solid fa-bars block md:none"></i>
         </div> -->
-
+        
     </nav>
+    <!-- Navbar Ends -->
 
-    <header class="flex justify-center items-center w-full">
-        <div class="left-header flex flex-col w-[50%]">
-            <h1 class="text-4xl font-bold text-left">We boost <br> growth for your <br>startup business.</h1>
+
+    <!-- Header Starts -->
+    
+    <header class="flex justify-center items-center w-full h-[800px]">
+        <div class="left-header flex flex-col w-[50%] ml-12">
+            <h1 class="text-[60px] text-[#0c1f41] leading-[70px] font-bold text-left ">We boost <br> growth for your <br>startup business.</h1>
+            <p class="my-7  text-[20px] text-[#0c1f41] font-semibold">Our goal is top at the heart of creativity services industry <br> as a digital creator. It has a after comment.</p>
+            <div class="header-btn-container flex items-center">
+                <button class="w-[150px] hover:text-black  h-[50px] text-white bg-orange-600 font-semibold rounded-xl hover:shadow-lg hover:font-bold duration-[0.2s] ease-in-out">Get Started</button>
+                <i class="fa-solid fa-circle-play ml-9 mr-4 text-[40px] p-1 border-l-orange-600 border-4 rounded-full border-t-orange-600 border-b-orange-600 hover:cursor-pointer"></i>
+                <h2 class="font-bold text-2xl hover:cursor-pointer">Learn More</h2>
+            </div>
         </div>
-        <div class="right-header flex flex-col w-[50%]">
-            <h1 class=" text-left">We boost growth for your startup business.</h1>
+        <div class="right-headerflex flex-col w-[50%] items-center justify-center ml-6">
+            <div class="header-img">
+                <img class="shadow-2xl rounded-full z-10 w-[60%]" src="../Assets/joyful-guy-texting-message-smartphone2 1.png" alt="">
+                <img class="absolute top-[30%] right-[13%] z-0 w-[40%]" src="../Assets/Group 10.png" alt="">
+            </div>
         </div>
     </header>
+
+    <!-- Header Ends -->
+
+    <!-- Services Starts -->
+
+    <section class="h-[650px] justify-center">
+        <p class="text-center font-semibold text-gray-600">SERVICES</p>
+        <h1 class="text-center font-bold text-gray-950 text-[40px]">Our Vision & Goal</h1>
+
+        <div class="cards mt-8 flex justify-around gap-5">
+            <div class="card justify-center text-center w-[300px] shadow-2xl rounded-xl">
+                <i class="fa-solid fa-arrow-up-right-dots text-4xl my-5"></i>
+                <h1 class="text-2xl font-bold my-3">Graphic Design</h1>
+                <p class="my-4  mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio in ipsa repudiandae quod provident voluptatem! Dolorem ipsa nesciunt fugit?</p>
+                <button class="w-[150px] my-9 hover:text-black  h-[50px] text-white bg-orange-600 rounded-xl hover:shadow-xl hover:font-bold duration-[0.2s] ease-in-out">Learn More</button>
+            </div>
+            <div class="card justify-center text-center w-[300px] shadow-2xl rounded-xl">
+                <i class="fa-solid fa-video text-4xl my-5"></i>
+                <h1 class="text-2xl font-bold my-3">Video Editing</h1>
+                <p class="my-4  mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio in ipsa repudiandae quod provident voluptatem! Dolorem ipsa nesciunt fugit?</p>
+                <button class="w-[150px] my-9 hover:text-black  h-[50px] text-white bg-orange-600 rounded-xl hover:shadow-xl hover:font-bold duration-[0.2s] ease-in-out">Learn More</button>
+            </div>
+            <div class="card justify-center text-center w-[300px] shadow-2xl rounded-xl">
+                <i class="fa-solid fa-chart-simple text-4xl my-5"></i>
+                <h1 class="text-2xl font-bold my-3">Digital Marketing</h1>
+                <p class="my-4  mx-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam optio in ipsa repudiandae quod provident voluptatem! Dolorem ipsa nesciunt fugit?</p>
+                <button class="w-[150px] my-9 hover:text-black  h-[50px] text-white bg-orange-600 rounded-xl hover:shadow-xl hover:font-bold duration-[0.2s] ease-in-out">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Ends -->
 </body>
 </html>
